@@ -11,6 +11,19 @@
   --snow: #FBFBFB;
 }
 
+
+.text-lava{
+  color: var(--liquid-lava);
+}
+
+.text-snow{
+  color: var(--snow)
+}
+
+.text-dusty-grey{
+  color: var(--dusty-grey);
+}
+
 .bg-about{
   background: url('/images/About.png');
   position: relative;
