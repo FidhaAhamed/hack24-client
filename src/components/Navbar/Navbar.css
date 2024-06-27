@@ -1,0 +1,55 @@
+.navbar{
+    background-color: #FBFBFB; 
+     height: 80px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding-left: 120px;
+ }
+ 
+ .logo{
+     width: 20%;
+     height: 80px;
+ }
+ 
+ .hack-logo{
+     width: 200px;
+     height: 80px;
+     cursor: pointer;
+ }
+ 
+ .nav-components{
+     width: 60%;
+ }
+ 
+ ul{
+     flex: 1;
+     list-style: none;
+     text-align: center;
+ }
+ 
+ ul li{
+     display: inline;
+     margin: 0 20px;
+     cursor: pointer;
+     font-size: 20px;
+     font-weight: 400;
+ }
+ 
+ .register-btn{
+     width: 20%;
+     height: 80px;
+     color: #F56E0F;
+     padding-top: 20px;
+ }
+ 
+ .btn{
+     border: 3px;
+     width: 160px;
+     height: 40px;
+     border-color: #878787;
+     font-weight: 500;
+     border-style: solid;
+     font-size: 20px;
+     align-items: center;
+ }
