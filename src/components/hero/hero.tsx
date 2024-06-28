@@ -27,11 +27,11 @@ export default function Hero() {
   }, []);
 
   const [isSmallScreen, setIsSmallScreen] = useState<boolean>(
-    window.innerWidth <= 320
+    window.innerWidth <= 700
   );
 
   const handleResize = () => {
-    setIsSmallScreen(window.innerWidth <= 320);
+    setIsSmallScreen(window.innerWidth <= 700);
   };
 
   useEffect(() => {
@@ -81,9 +81,14 @@ export default function Hero() {
         </div>
       </div>
       <div className="hero-design">
-        <div></div>
-        <div></div>
-        <div></div>
+        <div id="design-cont">
+          <p>
+            .hack(); ‘24 Hack beyond your limits Unlock new Possibilities Code
+            Your Dreams .hack(); ‘24
+          </p>
+        </div>
+        <div id="design1"></div>
+        <div id="design2"></div>
       </div>
     </section>
   );

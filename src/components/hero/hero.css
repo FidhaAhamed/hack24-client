@@ -2,27 +2,37 @@
   background-image: url("src/assets/Copper icosahedron pattern on a black.png");
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 }
 .hero-up {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap-reverse;
-  padding: 30px 10px;
+  padding: 20px 10px;
 }
 .reg {
   padding: 20px;
 }
+.reg img {
+  width: 70%;
+}
 .reg h4 {
+  padding: 10px 0px;
   font-family: Inter;
-  font-size: 32px;
+  /* font-size: 32px; */
+  font-size: 25px;
   font-weight: 500;
   line-height: 38.73px;
   text-align: left;
   color: rgba(255, 255, 255, 1);
 }
 .reg p {
+  padding: 5px 0px;
   font-family: Inter;
-  font-size: 20px;
+  /* font-size: 20px; */
+  font-size: 18px;
   font-weight: 400;
   line-height: 24.2px;
   text-align: left;
@@ -38,10 +48,11 @@
   padding: 20px;
 }
 .hero-cont h4 {
+  padding: 20px 0px;
   font-family: Inter;
-  font-size: 48px;
+  font-size: 45px;
   font-weight: 700;
-  line-height: 58.09px;
+  line-height: 25px;
   text-align: left;
   color: rgba(255, 255, 255, 1);
   -webkit-text-stroke-width: 1px;
@@ -49,15 +60,65 @@
 }
 .hero-cont .dot {
   font-size: 40px;
+  text-align: center;
   color: rgba(245, 110, 15, 1);
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: rgba(251, 251, 251, 1);
 }
 .hero-cont .typed {
+  padding-top: 25px;
   font-family: Inter;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
-  text-align: left;
+  text-align: center;
   color: rgba(245, 110, 15, 1);
+}
+.hero-design {
+  display: none;
+}
+#design-cont {
+  position: absolute;
+  width: 100vw;
+  /* color: rgba(21, 20, 25, 1); */
+  background-color: rgba(245, 110, 15, 1);
+  height: 70px;
+  top: 870px;
+  left: -51px;
+
+  /* font-family: Inter;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 38.73px;
+  text-align: left; */
+  z-index: 3;
+}
+#design-cont p {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(21, 20, 25, 1);
+  line-height: 38.73px;
+  text-align: center;
+}
+@media only screen and (min-width: 700px) {
+  .hero-design {
+    display: block;
+  }
+}
+@media only screen and (min-width: 900px) {
+  #hero {
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+  }
+  .reg {
+    width: 40%;
+  }
+  .hero-cont {
+    width: 50%;
+  }
+  .hero-cont h4 {
+    line-height: 58px;
+  }
 }
