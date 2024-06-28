@@ -1,0 +1,63 @@
+#hero {
+  background-image: url("src/assets/Copper icosahedron pattern on a black.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-up {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap-reverse;
+  padding: 30px 10px;
+}
+.reg {
+  padding: 20px;
+}
+.reg h4 {
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 38.73px;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+}
+.reg p {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24.2px;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+}
+.reg span {
+  color: rgba(245, 110, 15, 1);
+}
+.hero-text {
+  display: flex;
+}
+.hero-cont {
+  padding: 20px;
+}
+.hero-cont h4 {
+  font-family: Inter;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58.09px;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(245, 110, 15, 1);
+}
+.hero-cont .dot {
+  font-size: 40px;
+  color: rgba(245, 110, 15, 1);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(251, 251, 251, 1);
+}
+.hero-cont .typed {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: left;
+  color: rgba(245, 110, 15, 1);
+}
