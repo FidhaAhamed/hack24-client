@@ -1,0 +1,59 @@
+:root {
+  --header-padding: 1rem 0;
+  --content-padding: 0.2rem 0rem 1rem 0rem;
+  --border-color: #e4e4e7;
+  --title: 1rem;
+  --content: 0.95rem;
+  --icon-size: 1.5rem;
+  --primary-color: #c8dc71;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.upper-heading {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24.2px;
+  text-align: center;
+  color: #f56e0f;
+}
+.lower-heading h2 {
+  font-family: Inter;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 50.09px;
+  text-align: center;
+  color: #fbfbfb;
+}
+.timeline-container {
+  padding: 20px;
+}
+.timeline-container p {
+  font-family: Inter;
+  color: #fbfbfb;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 24.2px;
+  text-align: center;
+  padding: 20px 5px;
+}
+
+@media only screen and (min-width: 900px) {
+  .upper-heading {
+    font-size: 20px;
+  }
+  .lower-heading h2 {
+    font-size: 48px;
+    line-height: 58.09px;
+  }
+  .timeline-container {
+    width: 60%;
+    position: relative;
+    left: 40%;
+  }
+}
