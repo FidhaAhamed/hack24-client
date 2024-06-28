@@ -32,7 +32,7 @@ const Contact: React.FC = () => {
             <div className='contact-Info'>
               <p>Email us at:</p>
               <div className='contact-info'>
-              <p>hack24@gmail.com</p>
+              <p>hack24@mail.com</p>
               </div>
             </div>
           </div>
