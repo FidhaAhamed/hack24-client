@@ -1,4 +1,3 @@
-import Heading from "../heading"
 import "./Footer.css"
 import { FaFacebookF, FaWhatsapp, FaLinkedin, FaInstagram, FaTwitter  } from "react-icons/fa";
 
@@ -7,8 +6,8 @@ function Footer() {
     <div className="footer">
       <div className="footer-details">
         <div className="footer-about">
-          <Heading heading="" subheading="About us"></Heading>
-          <p>IEEE MACE SB is a non profit organization working for the upliftment of students and profeesionals.</p>
+          <h1>About Us</h1>
+          <p>IEEE MACE SB is a non profit organization working for the upliftment of students and professionals.</p>
           <div className="icons">
             <a href="#"><FaFacebookF /></a>
             <a href="#"><FaLinkedin /></a>

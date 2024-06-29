@@ -1,8 +1,26 @@
 #hero {
+  position: relative;
+  height: 1000px;
+  overflow: hidden;
+  width: 100%;
+}
+
+#hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-image: url("src/assets/Copper icosahedron pattern on a black.png");
   background-repeat: no-repeat;
   background-size: cover;
+  opacity: 40%;
+  z-index: -1; 
 }
+
+
+
 .hero-up {
   display: flex;
   justify-content: space-around;
@@ -11,6 +29,7 @@
 }
 .reg {
   padding: 20px;
+  margin-top: 200px;
 }
 .reg h4 {
   font-family: Inter;
@@ -19,6 +38,7 @@
   line-height: 38.73px;
   text-align: left;
   color: rgba(255, 255, 255, 1);
+  margin-top: 20px;
 }
 .reg p {
   font-family: Inter;
@@ -27,6 +47,7 @@
   line-height: 24.2px;
   text-align: left;
   color: rgba(255, 255, 255, 1);
+  margin-top: 10px;
 }
 .reg span {
   color: rgba(245, 110, 15, 1);
@@ -36,6 +57,7 @@
 }
 .hero-cont {
   padding: 20px;
+  margin-top: 200px;
 }
 .hero-cont h4 {
   font-family: Inter;
@@ -61,3 +83,63 @@
   text-align: left;
   color: rgba(245, 110, 15, 1);
 }
+
+.hero-design{
+  margin-top: 200px;
+}
+
+.white-rectangle {
+  width: 100%;
+  height: 60px;
+  background-color: #FBFBFB;
+  margin-right: 20px;
+  transform: rotate(-3deg);
+  position: relative;
+  z-index: 0;
+  top: 60px;
+}
+
+.grey-rectangle {
+  width: 100%;
+  height: 60px;
+  background-color: #878787;
+  margin-right: 20px;
+  transform: rotate(-2deg);
+  position: relative;
+  z-index: 1;
+}
+
+.orange-rectangle {
+  width: 100%;
+  height: 60px;
+  background-color: #F56E0F;
+  margin-right: 20px;
+  transform: rotate(-1deg);
+  position: relative;
+  z-index: 2;
+  bottom: 60px;
+}
+
+.rectangle-text{
+  position: relative;
+  transform: rotate(-1deg);
+  z-index: 3;
+  bottom: 110px;
+  font-size: 32px;
+  color: #151419;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  font-family: Inter;
+  line-height: 38.73px;
+}
+
+.rectangle-text .dot{
+  color: #FBFBFB;
+  font-size: 20px;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+

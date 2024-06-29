@@ -81,9 +81,24 @@ export default function Hero() {
         </div>
       </div>
       <div className="hero-design">
-        <div></div>
-        <div></div>
-        <div></div>
+        <div className="white-rectangle"></div>
+        <div className="grey-rectangle"></div>
+        <div className="orange-rectangle"></div>
+        <h4 className="rectangle-text">
+            .hack();'24{spaces}
+            <span className="dot"> • </span>
+            {spaces}
+            Hack beyond your limits{spaces}
+            <span className="dot"> • </span>
+            {spaces}
+            Unlock new posibilities{spaces}
+            <span className="dot"> • </span>
+            {spaces}
+            Code your dreams{spaces}
+            <span className="dot"> • </span>
+            {spaces}
+            .hack();'24
+          </h4>
       </div>
     </section>
   );
