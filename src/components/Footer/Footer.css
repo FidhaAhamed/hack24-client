@@ -21,10 +21,18 @@
     width: 65%;
     color: #fbfbfb;
   }
+
+  .footer-about h1{
+    font-weight: 700;
+    font-size: 38px;
+    margin-bottom: 20px;
+  }
   
   .footer-about p {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 300;
+    line-height: 24.2px;
+    font-family: Inter;
   }
   
   .icons {
@@ -56,8 +64,10 @@
   }
   
   .footer-contact p {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 300;
+    line-height: 24.2px;
+    font-family: Inter;
   }
 
 
@@ -80,8 +90,10 @@
     width: 100%;
     color: #fbfbfb;
     text-align: center;
-    font-size: 14px;
+    font-size: 16px;
     margin-bottom: 20px;
+    line-height: 21.78px;
+    font-family: Inter;
   }
   
   /* Media Queries for responsiveness */

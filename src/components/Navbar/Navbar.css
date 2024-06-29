@@ -38,6 +38,8 @@
      cursor: pointer;
      font-size: 20px;
      font-weight: 400;
+     font-family: Inter;
+     line-height: 24.2px;
  }
  
  .register-btn{
@@ -56,6 +58,8 @@
      border-style: solid;
      font-size: 20px;
      align-items: center;
+     font-family: Inter;
+     line-height: 24.2px;
  }
 
  .menu-icon {

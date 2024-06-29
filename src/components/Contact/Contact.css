@@ -21,7 +21,8 @@
   .descrptn{
     font-size: 20px;
     font-weight: 300;
-    line-height: 1.1;
+    line-height: 24.2px;
+    font-family: Inter;
   }
   
   .contact-descrptn {
@@ -52,6 +53,8 @@
   .contact-details p {
     font-weight: 600;
     font-size: 20px;
+    line-height: 24.2px;
+    font-family: Inter;
   }
 
   .contact-Info{
@@ -90,6 +93,8 @@
     margin-bottom: 5px;
     font-weight: 600;
     font-size: 18px;
+    line-height: 24.2px;
+    font-family: Inter;
   }
 
   .contact-form input,
