@@ -93,8 +93,16 @@ body{
   background: var(--liquid-lava);
 }
 
+.bg-black-m{
+  background: #000;
+}
+
 .bg-void-m{
   background: var(--dark-void);
+}
+
+.bg-lava-btn{
+  background: var(--liquid-lava);
 }
 
 .bg-gluon{
