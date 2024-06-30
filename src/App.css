@@ -4,3 +4,15 @@
     }
 }
 
+
+@media (max-width: 501px) {
+    .change{
+        height: 160dvh;
+    }
+}
+
+@media (max-width: 386px) {
+    .change{
+        height: 140dvh;
+    }
+}

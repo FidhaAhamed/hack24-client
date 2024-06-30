@@ -1,3 +1,4 @@
+import Heading from "../heading.js";
 import "./faq.css";
 import "./script.js";
 export default function Faq() {
@@ -7,12 +8,9 @@ export default function Faq() {
       className="md:h-dvh flex w-dvw flex-col place-content-center bg-gluon"
     >
       <div className="lg:p-4 py-12">
-        <div className="upper-heading">faq</div>
-        <div className="lower-heading">
-          <h2>Have some queries?</h2>
-        </div>
+        <Heading heading="Faq" subheading="Have some queries ?"></Heading>
         <div className="faq-body">
-          <div className="faq-questions">
+          <div className="faq-questions flex flex-col place-content-center">
             <div className="accordion-container">
               <details open>
                 <summary>

@@ -27,7 +27,7 @@ export default function About() {
       <div className="z-10 absolute w-full h-fit  md:h-full flex flex-col md:grid md:grid-cols-2 p-8">
         <div className="col-span-1 w-full h-full pb-8 md:pb-0 flex flex-col place-content-center place-items-center lg:p-20">
           <Heading heading="About" subheading=".hack(); 2024" />
-          <div className="text-center flex flex-col gap-y-4 text-snow">
+          <div className="text-center text-base flex flex-col gap-y-4 text-snow">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
               pariatur, facere sequi culpa nulla magnam, nobis aliquam iste
