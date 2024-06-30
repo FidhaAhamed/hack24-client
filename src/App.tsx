@@ -6,6 +6,8 @@ import Navbar from "./components/Navbar/Navbar";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import Hero from "./components/hero/hero";
+import PrizePool from "./components/PrizePool/PrizePool";
+
 
 function App() {
   return (
@@ -14,6 +16,7 @@ function App() {
       <Hero></Hero>
       <About></About>
       <Schedule></Schedule>
+      <PrizePool/>
       <Faq></Faq>
       <Contact></Contact>
       <Footer></Footer>
