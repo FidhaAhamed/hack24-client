@@ -188,7 +188,7 @@
   }
   
   @media (min-width: 720px) and (max-width: 879px) {
-    @include hex-grid(3, 2%, even);
+    @include hex-grid(2, 2%, even);
   }
   
   @media (min-width: 880px) and (max-width: 1099px) {
@@ -218,6 +218,17 @@
   @include clearfix;
 }
 
+.desc{
+  display: none;
+}
+
+.hex:hover .title{
+  display: none;
+}
+
+.hex:hover .desc{
+  display: block;
+}
 
 
 

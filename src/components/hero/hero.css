@@ -145,24 +145,3 @@
 
 
 
-.none{
-  display: block;
-}
-
-.appear{
-  display: none;
-}
-
-@media (max-width: 768px) {
-  .none{
-    display: none;
-  }
-
-  .appear{
-    display: block;
-  }
-
-  .rectangle-text{
-    font-size: 1rem;
-  }
-}
