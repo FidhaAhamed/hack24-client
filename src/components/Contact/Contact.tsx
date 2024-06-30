@@ -20,7 +20,7 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <div className="contact bg-void-m min-h-dvh lg:h-dvh p-4 md:p-16">
+    <div className="contact w-dvw bg-void-m min-h-dvh lg:h-dvh p-4 md:p-16">
       <div className="h-full flex flex-col md:grid md:grid-cols-2">
         <div className="h-full cols-span-1 p-4 md:p-16">
           <Heading
@@ -76,7 +76,7 @@ const Contact: React.FC = () => {
           <div className="bg-black flex flex-col"></div>
         </div>
         <div className="h-full cols-span-1 p-4">
-          <div className=" p-4 md:p-12 rounded-lg min-w-[360px] md:max-w-[480px] h-full bg-black-m  border-lava  ">
+          <div className=" p-4 md:p-12 rounded-lg  min-w-[240px] sm:min-w-[360px] md:max-w-[480px] h-full bg-black-m  border-lava  ">
             <form
               className="flex flex-col gap-y-6 h-full place-items-center text-white"
               onSubmit={handleSubmit}

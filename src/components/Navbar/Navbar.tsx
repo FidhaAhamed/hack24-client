@@ -10,7 +10,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className={`bg-snow navbar ${isMobile ? "align" : ""}`}>
+    <div className={`bg-snow w-dvw navbar ${isMobile ? "align" : ""}`}>
       <div className="logo">
         <img className="hack-logo" src="/images/hack26.png" alt=".hack();_" />
       </div>

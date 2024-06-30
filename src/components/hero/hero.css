@@ -1,5 +1,14 @@
 
+#hero{
+  overflow-x: hidden;
+}
 
+@media (max-width: 425px) {
+  #hero{
+  max-width: 425px;;
+
+  }
+}
 
 
 .hero-up {
@@ -13,7 +22,6 @@
   margin-top: 200px;
 }
 .reg h4 {
-  font-family: Inter;
   font-size: 32px;
   font-weight: 500;
   line-height: 38.73px;
@@ -22,7 +30,6 @@
   margin-top: 20px;
 }
 .reg p {
-  font-family: Inter;
   font-size: 20px;
   font-weight: 400;
   line-height: 24.2px;
@@ -41,7 +48,6 @@
   margin-top: 200px;
 }
 .hero-cont h4 {
-  font-family: Inter;
   font-size: 48px;
   font-weight: 700;
   line-height: 58.09px;
@@ -57,7 +63,6 @@
   -webkit-text-stroke-color: rgba(251, 251, 251, 1);
 }
 .hero-cont .typed {
-  font-family: Inter;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;

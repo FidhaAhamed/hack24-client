@@ -4,7 +4,7 @@ export default function Faq() {
   return (
     <section
       id="faq"
-      className="md:h-dvh flex flex-col place-content-center bg-gluon"
+      className="md:h-dvh flex w-dvw flex-col place-content-center bg-gluon"
     >
       <div className="lg:p-4 py-12">
         <div className="upper-heading">faq</div>

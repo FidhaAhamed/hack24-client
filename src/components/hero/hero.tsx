@@ -28,13 +28,13 @@ export default function Hero() {
   const spaces = " ";
 
   return (
-    <section id="hero" className="bg-hero h-lvh ">
+    <section id="hero" className="bg-hero w-dvw h-lvh font-mono">
       <div className="absolute z-10 w-full h-full grid grid-rows-4 overflow-x-hidden">
-        <div className="row-span-3">
+        <div className="row-span-3 overflow-x-hidden">
           <div className="h-full flex flex-col md:grid md:grid-cols-5">
             <div className="h-full w-full col-span-2 md:p-20">
               <div className="flex flex-col h-full place-content-center md:pl-4">
-                <div className="appear text-3xl px-6 text-snow font-bold stroke">
+                <div className="appear max-w-80 md:max-w-full flex text-3xl px-6 text-snow font-bold stroke">
                   Dream <span className="dot text-lg text-lava"> • </span>
                   Develop
                   <span className="dot text-lg text-lava"> • </span>Dominate
@@ -45,13 +45,13 @@ export default function Hero() {
                   alt=""
                 />
                 <div className="text-snow py-2 text-2xl px-6">August 2024</div>
-                <div className="px-6 text-lg text-snow">
+                <div className="px-6 text-lg text-snow max-w-80 md:max-w-full text-wrap">
                   A 36hr Hackathon conducted by{" "}
                   <span className="text-lava">IEEE MACE SB</span>
                 </div>
               </div>
             </div>
-            <div className="none h-full w-full col-span-3 md:flex flex-col place-content-center place-items-center">
+            <div className="none h-full w-full col-span-3 md:flex flex-col pr-16 place-content-center place-items-center">
               <div className="text-4xl text-snow font-bold stroke">
                 Dream <span className="dot text-lava"> • </span>Develop
                 <span className="dot text-lava"> • </span>Dominate

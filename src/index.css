@@ -53,7 +53,7 @@ body{
   content: "";
   position: absolute;
   background: var(--liquid-lava);
-  opacity: 0.03;
+  opacity: 0.01;
   top: 0;
   left: 0;
   width: 100%;
