@@ -21,7 +21,7 @@ const Prize = ({ icon, label, amount }: PrizeProps) => {
       prizeProps={{ icon, label, amount }}
       className="relative mb-16 border-[#FBFBFB] border-[1px] w-48 pt-3 px-3"
     >
-      <div className="prize-label flex justify-center items-center before:text-white before:text-sm before:font-normal before:absolute before:-top-4 before:px-6 before:bg-black" />
+      <div className="prize-label  flex justify-center items-center before:text-white before:text-sm before:font-normal before:absolute before:-top-4 before:px-6 before:bg-[#151419]" />
       <div className="flex items-center bg-[#F56E0F] p-3">
         <img src={icon} alt="winner-icon" className="w-8" />
         <p className="ml-4 text-lg text-white">₹{amount}</p>
