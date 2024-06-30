@@ -7,7 +7,7 @@ import TotalPrize from "./TotalPrize";
 
 const PrizePool = () => {
   return (
-    <section className="px-3 w-dvw pt-12 md:px-12 lg:px-32  max-w-[1500px] min-h-dvh flex flex-col place-content-center">
+    <section className="px-3 w-dvw pt-12 md:px-12 lg:px-32 bg-void-m max-w-[1500px] min-h-dvh flex flex-col place-content-center">
       <h1 className="text-sm sm:text-lg text-center text-[#F56E0F] font-semibold">
         Prize Pool
       </h1>
