@@ -27,7 +27,7 @@ const Contact: React.FC = () => {
             heading={"Contact"}
             subheading={"Get In Touch With Us"}
           ></Heading>
-          <div className="text-md text-center text-slate-300">
+          <div className="text-base text-center text-slate-300">
             Have more queries? Need to get in touch with us? Either fill the
             form with your enquiry or try contacting us with one of the options
             below.
@@ -78,10 +78,10 @@ const Contact: React.FC = () => {
         <div className="h-full cols-span-1 p-4">
           <div className=" p-4 md:p-12 rounded-lg  min-w-[240px] sm:min-w-[360px] md:max-w-[480px] h-full bg-black-m  border-lava  ">
             <form
-              className="flex flex-col gap-y-6 h-full place-items-center text-white"
+              className="flex flex-col text-base gap-y-6 h-full place-items-center text-white"
               onSubmit={handleSubmit}
             >
-              <div className="flex flex-col gap-y-2 w-full">
+              <div className="flex  flex-col gap-y-2 w-full">
                 <label htmlFor="name">Name</label>
                 <input
                   className="bg-void-m rounded-md h-10 border border-slate-700"
