@@ -143,10 +143,7 @@
   -webkit-text-stroke-color: var(--snow);
 }
 
-.stroke{
-  -webkit-text-stroke-width: 0.5px;
-  -webkit-text-stroke-color: var(--liquid-lava);
-}
+
 
 .none{
   display: block;
