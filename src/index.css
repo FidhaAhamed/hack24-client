@@ -10,6 +10,8 @@
   --dusty-grey: #878787;
   --snow: #FBFBFB;
 
+  padding: 0;
+  margin: 0;
 }
 
 
@@ -68,3 +70,43 @@ body{
 .bg-snow{
   background: var(--snow);
 }
+
+.bg-lava{
+  background: var(--liquid-lava);
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+}
+
+.bg-lava:hover{
+  background: var(--dark-void);
+}
+
+.bg-void{
+  background: var(--dark-void);
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+
+
+}
+
+.bg-void:hover{
+  background: var(--liquid-lava);
+}
+
+.bg-void-m{
+  background: var(--dark-void);
+}
+
+.bg-gluon{
+  background: var(--gluon-grey);
+}
+
+.stroke{
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: var(--liquid-lava);
+}
+
+.outlines{
+  outline: 2px solid var(--snow);
+}
+

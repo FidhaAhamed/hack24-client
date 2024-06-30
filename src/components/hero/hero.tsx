@@ -18,7 +18,6 @@ export default function Hero() {
           backDelay: 2000,
         });
 
-        // Cleanup Typed instance on component unmount
         return () => {
           typed.destroy();
         };
