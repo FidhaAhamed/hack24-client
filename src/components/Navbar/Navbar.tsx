@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "./Navbar.css";
-import HackLogo from "../../assets/hackLogo.png";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
@@ -11,36 +10,36 @@ const Navbar = () => {
   };
 
   return (
-    <div className={`navbar ${isMobile ? "align" : ""}`}>
+    <div className={`bg-snow navbar ${isMobile ? "align" : ""}`}>
       <div className="logo">
-        <img className="hack-logo" src={HackLogo} alt=".hack();_" />
+        <img className="hack-logo" src="/images/hack26.png" alt=".hack();_" />
       </div>
 
       <div className={`nav-components ${isMobile ? "open" : ""}`}>
         <ul>
-          <li>
+          <li className="font-mono">
             <a href="">About</a>
           </li>
-          <li>
+          <li className="font-mono">
             <a href="">Timeline</a>
           </li>
-          <li>
+          <li className="font-mono">
             <a href="">Prize Pool</a>
           </li>
-          <li>
+          <li className="font-mono">
             <a href="">Sponsers</a>
           </li>
-          <li>
+          <li className="font-mono">
             <a href="">FAQ</a>
           </li>
-          <li>
+          <li className="font-mono">
             <a href="">Contact</a>
           </li>
         </ul>
       </div>
 
       <div className={`register-btn ${isMobile ? "open" : ""}`}>
-        <button className="btn">Register</button>
+        <button className="btn font-mono">Register</button>
       </div>
 
       <div className="menu-icon" onClick={toggleMenu}>
