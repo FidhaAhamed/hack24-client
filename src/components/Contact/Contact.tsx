@@ -23,67 +23,44 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <div className="contact bg-void-m">
-      <div className="contact-descrptn">
-        <Heading heading="Contact" subheading="Get in touch with us"></Heading>
-        <p className="descrptn">
-          Have more queries? Need to get in touch with us? Either fill the form
-          with your enquiry or try contacting us with one of the options below.
-        </p>
-        <div className="contact-block">
-          <div className="contact-details">
-            <img src={mailIcon} alt="mail" />
-            <div className="contact-Info">
-              <p>Email us at:</p>
-              <div className="contact-info">
-                <p>hack24@mail.com</p>
-              </div>
-            </div>
-          </div>
-          <div className="contact-details">
-            <img src={phoneIcon} alt="phone" />
-            <div className="contact-Info">
-              <p>Contact us at:</p>
-              <div className="contact-info">
-                <p>Name: +91xxxxxxxxxx</p>
-                <p>Name: +91xxxxxxxxxx</p>
-              </div>
-            </div>
+    <div className="contact bg-void-m min-h-dvh p-4 md:p-16">
+      <div className="h-full flex flex-col md:grid md:grid-cols-2">
+        <div className="h-full cols-span-1"></div>
+        <div className="h-full cols-span-1 p-4">
+          <div className="form md:p-16 md:px-20">
+            <form className="flex flex-col" onSubmit={handleSubmit}>
+              <label htmlFor="name">Name</label>
+              <input
+                type="text"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+              />
+              <label htmlFor="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+              />
+              <label htmlFor="subject">Subject</label>
+              <input
+                type="text"
+                name="subject"
+                value={formData.subject}
+                onChange={handleChange}
+              />
+              <label htmlFor="message">What we can help you with?</label>
+              <textarea
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+                rows={6}
+              ></textarea>
+              <button type="submit">Submit</button>
+            </form>
           </div>
         </div>
-      </div>
-      <div className="contact-form">
-        <form onSubmit={handleSubmit}>
-          <label htmlFor="name">Name</label>
-          <input
-            type="text"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-          />
-          <label htmlFor="email">Email</label>
-          <input
-            type="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-          />
-          <label htmlFor="subject">Subject</label>
-          <input
-            type="text"
-            name="subject"
-            value={formData.subject}
-            onChange={handleChange}
-          />
-          <label htmlFor="message">What we can help you with?</label>
-          <textarea
-            name="message"
-            value={formData.message}
-            onChange={handleChange}
-            rows={6}
-          ></textarea>
-          <button type="submit">Submit</button>
-        </form>
       </div>
     </div>
   );

@@ -106,6 +106,10 @@ body{
   -webkit-text-stroke-color: var(--liquid-lava);
 }
 
+.border-lava{
+  border: 2px solid var(--liquid-lava);
+}
+
 .outlines{
   outline: 2px solid var(--snow);
 }
