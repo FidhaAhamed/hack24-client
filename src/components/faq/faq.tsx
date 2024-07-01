@@ -162,7 +162,7 @@ export default function Faq() {
           </div>
           <div className="faq-img">
             <img
-              src="src\assets\thinking programmer.png"
+              src="/images/thinking programmer.png"
               alt="thinking programmer"
             />
           </div>
