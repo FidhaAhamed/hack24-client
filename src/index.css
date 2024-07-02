@@ -19,6 +19,8 @@
 
 body{
   overflow-x: hidden;
+  background: var(--gluon-grey);
+
 }
 
 .text-lava{
