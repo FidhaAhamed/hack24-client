@@ -16,6 +16,11 @@
   font-family: monospace;
 }
 
+html{
+  overflow-x: hidden;
+
+}
+
 
 body{
   overflow-x: hidden;

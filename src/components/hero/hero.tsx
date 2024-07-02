@@ -52,7 +52,7 @@ export default function Hero() {
                   src="/images/orangehack.png"
                   alt=""
                 />
-                <div className="text-snow py-2 text-2xl px-6 text-wrap ">
+                <div className="text-snow py-2 max-w-80 md:max-w-full text-2xl px-6 text-wrap ">
                   30 August - 1 September 2024
                 </div>
                 <div className="px-6 text-lg text-snow max-w-80 md:max-w-full text-wrap">
