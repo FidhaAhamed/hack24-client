@@ -1,7 +1,6 @@
 import "./Footer.css";
 import {
   FaFacebookF,
-  FaWhatsapp,
   FaLinkedin,
   FaInstagram,
   FaTwitter,
@@ -18,37 +17,32 @@ function Footer() {
               IEEE MACE SB is a non profit organization working for the
               upliftment of students and professionals.
             </p>
-            <div className="icons">
-              <a href="#">
+            <div className="icons flex gap-y-4">
+              <a
+                className="bg-orange-700 hover:bg-orange-900 rounded-full w-10 h-10 flex place-content-center place-items-center"
+                href="#"
+              >
                 <FaFacebookF />
               </a>
-              <a href="#">
+              <a
+                className="bg-orange-700 hover:bg-orange-900 rounded-full w-10 h-10 flex place-content-center place-items-center"
+                href="#"
+              >
                 <FaLinkedin />
               </a>
-              <a href="#">
+              <a
+                className="bg-orange-700 hover:bg-orange-900 rounded-full w-10 h-10 flex place-content-center place-items-center"
+                href="#"
+              >
                 <FaInstagram />
               </a>
-              <a href="#">
+              <a
+                className="bg-orange-700 hover:bg-orange-900 rounded-full w-10 h-10 flex place-content-center place-items-center"
+                href="#"
+              >
                 <FaTwitter />
               </a>
             </div>
-          </div>
-          <div className="footer-contact">
-            <h1>Contact Us</h1>
-            <p>
-              <a href="#">
-                <FaWhatsapp /> <span>Name1</span>
-              </a>
-            </p>
-            <p>
-              <a href="#">
-                <FaWhatsapp />
-                <span>Name2</span>
-              </a>
-            </p>
-            <p className="email">
-              <a href="">Email: hack24@mail.com</a>
-            </p>
           </div>
         </div>
       </div>

@@ -1,18 +1,25 @@
 @media (max-width: 768px) {
     .change{
-        height: 140dvh;
+        height: 160dvh;
     }
 }
 
 
-@media (max-width: 501px) {
+@media (max-width: 510px) {
     .change{
-        height: 160dvh;
+        height: 200dvh;
+    }
+}
+
+
+@media (max-width: 460px) {
+    .change{
+        height: 190dvh;
     }
 }
 
 @media (max-width: 386px) {
     .change{
-        height: 140dvh;
+        height: 170dvh;
     }
 }

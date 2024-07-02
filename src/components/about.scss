@@ -196,7 +196,7 @@
   }
   
   @media (min-width: 1100px) {
-      @include hex-grid(3, 2%, odd);
+      @include hex-grid(3, 2%, even);
   }
   
   & > div {
@@ -218,17 +218,7 @@
   @include clearfix;
 }
 
-.desc{
-  display: none;
-}
 
-.hex:hover .title{
-  display: none;
-}
-
-.hex:hover .desc{
-  display: block;
-}
 
 
 

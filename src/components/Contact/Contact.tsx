@@ -20,7 +20,7 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <div className="contact w-dvw bg-void-m min-h-dvh lg:h-dvh p-4 md:p-16">
+    <div className="contact w-dvw bg-void-m h-full lg:h-dvh p-4 md:p-16">
       <div className="h-full flex flex-col md:grid md:grid-cols-2">
         <div className="h-full cols-span-1 p-4 md:p-16">
           <Heading
@@ -53,21 +53,21 @@ const Contact: React.FC = () => {
               </div>
               <div className="flex flex-col pb-6">
                 <p className=" w-full text-lg text-slate-100 text-center">
-                  Name :{" "}
+                  Anamika KP :{" "}
                   <a
                     className=" text-slate-300 hover:text-orange-500"
-                    href="tel:+4733378901"
+                    href="tel:+917736610701"
                   >
-                    +47 333 78 901
+                    +91 7736 610 701
                   </a>
                 </p>
                 <p className=" w-full text-lg text-slate-100 text-center">
-                  Name :{" "}
+                  Colin Jimmy :{" "}
                   <a
                     className=" text-slate-300 hover:text-orange-500"
                     href="tel:+4733378901"
                   >
-                    +47 333 78 901
+                    +91 8921 444 299
                   </a>
                 </p>
               </div>
