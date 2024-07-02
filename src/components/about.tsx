@@ -26,9 +26,11 @@ export default function About() {
     <div className="relative change w-dvw  md:h-dvh bg-about">
       <div className="z-10 absolute w-full h-fit  md:h-full flex flex-col md:grid md:grid-cols-2 p-8">
         <div className="col-span-1 w-full h-full pb-8 md:pb-0 flex flex-col place-content-center place-items-center lg:p-20">
-          <Heading heading="About" subheading=".hack(); 2024" />
+          <div data-aos="fade-down">
+            <Heading heading="About" subheading=".hack(); 2024" />
+          </div>
           <div className="text-center text-base flex flex-col gap-y-4 text-snow">
-            <p>
+            <p data-aos="fade-up">
               .hack(); 2024 marks the 5th iteration of IEEE MACE SB's flagship
               event, a 36-hour hackathon where passionate minds forge innovative
               solutions to pressing social issues. Its alignment with the UN’s
@@ -38,7 +40,7 @@ export default function About() {
               experts from diverse fields will judge and mentor participants,
               fostering an environment of innovation.
             </p>
-            <p>
+            <p data-aos="fade-up">
               Beyond the coding frenzy, the event offers inspiring talks,
               insightful experience sharing sessions of past participants, a
               bustling project expo, and dedicated networking opportunities.
@@ -47,39 +49,39 @@ export default function About() {
         </div>
         <div className="col-span-1 w-full h-full  place-content-center place-items-center lg:p-8">
           {" "}
-          <div className="container">
-            <div className="none hex bg-void">
+          <div className="container " data-aos="flip-left">
+            <div className="none hex bg-void" data-aos="flip-right">
               <div className="hex-inner"></div>
               <div className="title text-2xl text-snow font-bold">
                 Good Health and Wellbeing
               </div>
             </div>
-            <div className="none hex bg-lava">
+            <div className="none hex bg-lava" data-aos="flip-right">
               <div className="hex-inner"></div>
               <div className="title text-2xl text-snow font-bold">
                 Quality Education
               </div>
             </div>
-            <div className="none hex bg-lava">
+            <div className="none hex bg-lava" data-aos="flip-right">
               <div className="hex-inner"></div>
               <div className="title text-2xl text-snow font-bold">
                 Affordable and clean energy
               </div>
             </div>
 
-            <div className="none hex">
+            <div className="none hex" data-aos="flip-right">
               <div className="hex-inner"></div>
               <div className="text-2xl text-lava font-bold">Tracks</div>
             </div>
 
             {isSmallScreen && (
-              <div className=" hex">
+              <div className=" hex" data-aos="flip-right">
                 <div className="hex-inner"></div>
                 <div className="text-2xl text-lava font-bold">Tracks</div>
               </div>
             )}
             {isSmallScreen && (
-              <div className="hex bg-lava">
+              <div className="hex bg-lava" data-aos="flip-right">
                 <div className="hex-inner"></div>
                 <div className="title text-2xl text-snow font-bold">
                   Good Health and Wellbeing
@@ -87,7 +89,7 @@ export default function About() {
               </div>
             )}
             {isSmallScreen && (
-              <div className="hex bg-void">
+              <div className="hex bg-void" data-aos="flip-right">
                 <div className="hex-inner"></div>
                 <div className="title text-2xl text-snow font-bold">
                   Quality Education
@@ -95,35 +97,35 @@ export default function About() {
               </div>
             )}
             {isSmallScreen && (
-              <div className="hex bg-lava">
+              <div className="hex bg-lava" data-aos="flip-right">
                 <div className="hex-inner"></div>
                 <div className="title text-2xl text-snow font-bold">
                   Affordable and clean energy
                 </div>
               </div>
             )}
-            <div className=" hex bg-void">
+            <div className=" hex bg-void" data-aos="flip-right">
               <div className="hex-inner"></div>
               <div className="title text-2xl text-snow font-bold">
                 Industry, Innovation, and infrastructure
               </div>
             </div>
             {isSmallScreen && (
-              <div className="hex bg-lava">
+              <div className="hex bg-lava" data-aos="flip-right">
                 <div className="hex-inner"></div>
                 <div className="title text-2xl text-snow font-bold">
                   Life on Land
                 </div>
               </div>
             )}
-            <div className="hex bg-void">
+            <div className="hex bg-void" data-aos="flip-right">
               <div className="hex-inner"></div>
               <div className="title text-2xl text-snow font-bold">
                 Sustainable Cities and Communities
               </div>
             </div>
 
-            <div className="none hex bg-lava">
+            <div className="none hex bg-lava" data-aos="flip-right">
               <div className="hex-inner"></div>
 
               <div className="title text-2xl text-snow font-bold">

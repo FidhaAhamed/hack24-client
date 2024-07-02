@@ -27,13 +27,16 @@ const Contact: React.FC = () => {
             heading={"Contact"}
             subheading={"Get In Touch With Us"}
           ></Heading>
-          <div className="text-base text-center text-slate-300">
+          <div
+            data-aos="zoom-in"
+            className="text-base text-center text-slate-300"
+          >
             Have more queries? Need to get in touch with us? Either fill the
             form with your enquiry or try contacting us with one of the options
             below.
           </div>
           <div className="flex flex-col mt-8 gap-y-4">
-            <div className="bg-black  flex flex-col">
+            <div data-aos="fade-left" className="bg-black  flex flex-col">
               <div className="flex px-4 p-2">
                 <img className="w-14" src="/images/mail-icon.png" alt="" />
                 <div className="p-4 pb-0 text-snow text-xl">Email us at :</div>
@@ -44,7 +47,7 @@ const Contact: React.FC = () => {
                 </p>
               </div>
             </div>
-            <div className="bg-black  flex flex-col">
+            <div data-aos="fade-right" className="bg-black  flex flex-col">
               <div className="flex px-4 p-2">
                 <img className="w-14" src="/images/phone-icon.png" alt="" />
                 <div className="p-4 pb-0 text-snow text-xl">
@@ -76,7 +79,10 @@ const Contact: React.FC = () => {
           <div className="bg-black flex flex-col"></div>
         </div>
         <div className="h-full cols-span-1 p-4">
-          <div className=" p-4 md:p-12 rounded-lg  min-w-[240px] sm:min-w-[360px] md:max-w-[480px] h-full bg-black-m  border-lava  ">
+          <div
+            data-aos="flip-right"
+            className=" p-4 md:p-12 rounded-lg  min-w-[240px] sm:min-w-[360px] md:max-w-[480px] h-full bg-black-m  border-lava  "
+          >
             <form
               className="flex flex-col text-base gap-y-6 h-full place-items-center text-white"
               onSubmit={handleSubmit}

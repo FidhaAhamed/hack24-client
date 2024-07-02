@@ -10,7 +10,7 @@ function Footer() {
   return (
     <div className="flex flex-col">
       <div className="footer">
-        <div className="footer-details">
+        <div className="footer-details" data-aos="fade-up">
           <div className="footer-about">
             <h1>About Us</h1>
             <p>

@@ -1,8 +1,10 @@
 import { useEffect, useRef } from "react";
 import Typed from "typed.js";
 import "./hero.css";
+
 export default function Hero() {
   const typedElementRef = useRef<HTMLSpanElement | null>(null);
+
   useEffect(() => {
     if (typedElementRef.current) {
       const typedStrings =
@@ -31,9 +33,12 @@ export default function Hero() {
     <section id="hero" className="bg-hero w-dvw h-lvh font-mono">
       <div className="absolute z-10 w-full h-full grid grid-rows-4 overflow-x-hidden">
         <div className="row-span-3 overflow-x-hidden">
-          <div className="h-full flex flex-col md:grid md:grid-cols-5">
+          <div
+            data-aos="fade-up"
+            className="h-full flex flex-col md:grid md:grid-cols-5"
+          >
             <div className="h-full w-full col-span-2 md:p-20">
-              <div className="flex flex-col h-full place-content-center md:pl-4">
+              <div className="flex  flex-col h-full place-content-center md:pl-4">
                 <div className="appear max-w-80 md:max-w-full flex text-3xl px-6 text-snow font-bold stroke">
                   Dream <span className="dot text-lg text-lava"> • </span>
                   Develop
@@ -70,7 +75,7 @@ export default function Hero() {
             </div>
           </div>
         </div>
-        <div className="row-span-1">
+        <div data-aos="fade-down" className="row-span-1">
           <div className="hero-design">
             <div className="white-rectangle"></div>
             <div className="grey-rectangle"></div>

@@ -10,7 +10,10 @@ export default function Faq() {
       <div className="lg:p-4 py-12">
         <Heading heading="Faq" subheading="Have some queries ?"></Heading>
         <div className="faq-body">
-          <div className="faq-questions flex flex-col place-content-center">
+          <div
+            data-aos="fade-down"
+            className="faq-questions flex flex-col place-content-center"
+          >
             <div className="accordion-container">
               <details open>
                 <summary>
@@ -160,7 +163,7 @@ export default function Faq() {
               </details>
             </div>
           </div>
-          <div className="faq-img">
+          <div data-aos="flip-left" className="faq-img">
             <img
               src="/images/thinking programmer.png"
               alt="thinking programmer"
