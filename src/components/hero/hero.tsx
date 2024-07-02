@@ -30,9 +30,12 @@ export default function Hero() {
   const spaces = " ";
 
   return (
-    <section id="hero" className="bg-hero w-dvw h-lvh font-mono">
-      <div className="absolute z-10 w-full h-full grid grid-rows-4 overflow-x-hidden">
-        <div className="row-span-3 overflow-x-hidden">
+    <section
+      id="hero"
+      className="bg-hero w-dvw h-lvh font-mono overflow-y-hidden"
+    >
+      <div className="absolute z-10 w-full h-full grid grid-rows-4 overflow-x-hidden overflow-y-hidden">
+        <div className="row-span-3 overflow-x-hidden overflow-y-hidden">
           <div
             data-aos="fade-up"
             className="h-full flex flex-col md:grid md:grid-cols-5"
@@ -49,7 +52,7 @@ export default function Hero() {
                   src="/images/orangehack.png"
                   alt=""
                 />
-                <div className="text-snow py-2 text-2xl px-6">
+                <div className="text-snow py-2 text-2xl px-6 text-wrap ">
                   30 August - 1 September 2024
                 </div>
                 <div className="px-6 text-lg text-snow max-w-80 md:max-w-full text-wrap">
