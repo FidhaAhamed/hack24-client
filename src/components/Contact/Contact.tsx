@@ -43,7 +43,9 @@ const Contact: React.FC = () => {
               </div>
               <div className="flex pb-6">
                 <p className=" w-full text-lg text-slate-300 hover:text-orange-500 text-center">
-                  <a href="mailto:someone@example.com">mail@mail.com</a>
+                  <a href="mailto:hack.macesb@gmail.com">
+                    hack.macesb@gmail.com
+                  </a>
                 </p>
               </div>
             </div>
