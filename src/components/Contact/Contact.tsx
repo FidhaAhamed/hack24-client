@@ -82,7 +82,7 @@ const Contact: React.FC = () => {
         </div>
         <div className="h-full cols-span-1 p-4">
           <div
-            data-aos="flip-right"
+            data-aos="zoom-out"
             className=" p-4 md:p-12 rounded-lg  min-w-[240px] sm:min-w-[360px] md:max-w-[480px] h-full bg-black-m  border-lava  "
           >
             <form
