@@ -29,11 +29,38 @@ export default function Hero() {
 
   const spaces = " ";
 
+
+  useEffect(() => {
+    // scrollDown()
+    // const timer = setTimeout(() => {
+    //   scrollUp()
+    // }, 1000);
+
+    generateHexGrid();
+  }, []);
+
+  const generateHexGrid = () => {
+    const hexGrid = document.getElementById("hexGrid") as HTMLElement;
+    const numColumns = 14;
+    const numRows = 3;
+
+    for (let row = 0; row < numRows; row++) {
+      for (let col = 0; col < numColumns; col++) {
+        const hexagon = document.createElement("div");
+        hexagon.classList.add("hexagon");
+        hexagon.style.marginTop = row % 2 === 0 ? "0" : "0vw";
+        hexGrid.appendChild(hexagon);
+      }
+    }
+  };
+
+
   return (
     <section
       id="hero"
       className="bg-hero w-dvw h-lvh font-mono overflow-y-hidden"
     >
+    <div className="hex-grid" id="hexGrid"></div>
       <div className="absolute z-10 w-full h-full grid grid-rows-4 overflow-x-hidden overflow-y-hidden">
         <div className="row-span-3 overflow-x-hidden overflow-y-hidden">
           <div
