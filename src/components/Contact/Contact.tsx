@@ -20,7 +20,7 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <div className="contact w-dvw bg-void-m h-full lg:h-dvh p-4 md:p-16">
+    <div id="contact" className="contact w-dvw bg-void-m h-full lg:h-dvh p-4 md:p-16">
       <div className="h-full flex flex-col md:grid md:grid-cols-2">
         <div className="h-full cols-span-1 p-4 md:p-16">
           <Heading

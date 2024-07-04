@@ -18,22 +18,22 @@ const Navbar = () => {
       <div className={`nav-components ${isMobile ? "open" : ""}`}>
         <ul>
           <li className="font-mono">
-            <a href="">About</a>
+            <a href="#about">About</a>
           </li>
           <li className="font-mono">
             <a href="">Timeline</a>
           </li>
           <li className="font-mono">
-            <a href="">Prize Pool</a>
+            <a href="#prizepool">Prize Pool</a>
           </li>
           <li className="font-mono">
             <a href="">Sponsers</a>
           </li>
           <li className="font-mono">
-            <a href="">FAQ</a>
+            <a href="#faq">FAQ</a>
           </li>
           <li className="font-mono">
-            <a href="">Contact</a>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       </div>
