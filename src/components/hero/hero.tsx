@@ -114,7 +114,7 @@ export default function Hero() {
               .hack();'24{spaces}
               <span className="dot"> • </span>
               {spaces}
-              Hack beyond your limits{spaces}
+              Dream Develop Dominate{spaces}
               <span className="dot"> • </span>
               {spaces}
               .hack();'24
