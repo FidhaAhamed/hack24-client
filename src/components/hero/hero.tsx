@@ -1,8 +1,10 @@
-import { useState, useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import Typed from "typed.js";
 import "./hero.css";
+
 export default function Hero() {
   const typedElementRef = useRef<HTMLSpanElement | null>(null);
+
   useEffect(() => {
     if (typedElementRef.current) {
       const typedStrings =
@@ -18,7 +20,6 @@ export default function Hero() {
           backDelay: 2000,
         });
 
-        // Cleanup Typed instance on component unmount
         return () => {
           typed.destroy();
         };
@@ -26,69 +27,107 @@ export default function Hero() {
     }
   }, []);
 
-  const [isSmallScreen, setIsSmallScreen] = useState<boolean>(
-    window.innerWidth <= 700
-  );
-
-  const handleResize = () => {
-    setIsSmallScreen(window.innerWidth <= 700);
-  };
+  const spaces = " ";
 
   useEffect(() => {
-    window.addEventListener("resize", handleResize);
+    // scrollDown()
+    // const timer = setTimeout(() => {
+    //   scrollUp()
+    // }, 1000);
 
-    // Cleanup event listener on component unmount
-    return () => window.removeEventListener("resize", handleResize);
+    generateHexGrid();
   }, []);
 
-  const spaces: JSX.Element | string = isSmallScreen ? (
-    <>
-      <br />
-      <br />
-    </>
-  ) : (
-    " "
-  );
+  const generateHexGrid = () => {
+    const hexGrid = document.getElementById("hexGrid") as HTMLElement;
+    const numColumns = 14;
+    const numRows = 3;
+
+    for (let row = 0; row < numRows; row++) {
+      for (let col = 0; col < numColumns; col++) {
+        const hexagon = document.createElement("div");
+        hexagon.classList.add("hexagon");
+        hexagon.style.marginTop = row % 2 === 0 ? "0" : "0vw";
+        hexGrid.appendChild(hexagon);
+      }
+    }
+  };
 
   return (
-    <section id="hero">
-      <div className="hero-up">
-        <div className="reg">
-          <img src="src\assets\orangehacklogo 1.png" alt=">.hack();_" />
-          <h4>31st-1st August 2024</h4>
-          <p>
-            A 36hr Hackathon conducted by <span>IEEE MACE SB</span>
-          </p>
-        </div>
-        <div className="hero-cont">
-          <h4>
-            Innovate{spaces}
-            <span className="dot"> • </span>
-            {spaces}
-            Collaborate{spaces}
-            <span className="dot"> • </span>
-            {spaces}
-            Create
-          </h4>
-          <span
-            ref={typedElementRef}
-            className="typed"
-            data-typed-items="Welcome to .hack();"
+    <section
+      id="hero"
+      className="bg-hero w-dvw h-lvh font-mono overflow-y-hidden"
+    >
+      <div className="hex-grid" id="hexGrid"></div>
+      <div className="absolute z-10 w-full h-full grid grid-rows-4 overflow-x-hidden overflow-y-hidden">
+        <div className="row-span-3 overflow-x-hidden overflow-y-hidden">
+          <div
+            data-aos="fade-up"
+            className="h-full flex flex-col md:grid md:grid-cols-5"
           >
-            Welcome to .hack();
-          </span>
-          <p></p>
+            <div className="h-full w-full col-span-2 md:p-20">
+              <div className="flex  flex-col h-full place-content-center md:pl-4">
+                <div className="appear max-w-80 md:max-w-full flex text-3xl px-6 text-snow font-bold stroke">
+                  Dream <span className="dot text-lg text-lava"> • </span>
+                  Develop
+                  <span className="dot text-lg text-lava"> • </span>Dominate
+                </div>
+                <img
+                  className="w-96 md:w-2/3 p-4"
+                  src="/images/orangehack.png"
+                  alt=""
+                />
+                <div className="text-snow py-2 max-w-80 md:max-w-full text-2xl px-6 text-wrap ">
+                  30 August - 1 September 2024
+                </div>
+                <div className="px-6 text-lg text-snow max-w-80 md:max-w-full text-wrap">
+                  A 36hr Hackathon conducted by{" "}
+                  <span className="text-lava">IEEE MACE SB</span>
+                </div>
+              </div>
+            </div>
+            <div className="none h-full w-full col-span-3 md:flex flex-col pr-16 place-content-center place-items-center">
+              <div className="text-4xl text-snow font-bold stroke">
+                Dream <span className="dot text-lava"> • </span>Develop
+                <span className="dot text-lava"> • </span>Dominate
+              </div>
+              <div>
+                <span
+                  ref={typedElementRef}
+                  className="typed text-lava text-2xl"
+                  data-typed-items="Welcome to .hack();24"
+                >
+                  Welcome to .hack();24;
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div className="hero-design">
-        <div id="design-cont">
-          <p>
-            .hack(); ‘24 Hack beyond your limits Unlock new Possibilities Code
-            Your Dreams .hack(); ‘24
-          </p>
+        <div data-aos="fade-down" className="row-span-1">
+          <div className="hero-design">
+            <div className="white-rectangle"></div>
+            <div className="grey-rectangle"></div>
+            <div className="orange-rectangle"></div>
+            <h4 className="rectangle-text">
+              .hack();'24{spaces}
+              <span className="dot"> • </span>
+              {spaces}
+              Dream Develop Dominate{spaces}
+              <span className="dot"> • </span>
+              {spaces}
+              .hack();'24
+              <span className="dot"> • </span>
+              {spaces}
+              Unlock new posibilities{spaces}
+              <span className="dot"> • </span>
+              {spaces}
+              Code your dreams{spaces}
+              <span className="dot"> • </span>
+              {spaces}
+              .hack();'24
+            </h4>
+          </div>
         </div>
-        <div id="design1"></div>
-        <div id="design2"></div>
       </div>
     </section>
   );

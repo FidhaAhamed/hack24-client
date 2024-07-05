@@ -27,7 +27,7 @@ export default function Schedule() {
     return () => window.removeEventListener("resize", updateImageSrc);
   }, []);
   return (
-    <section id="timeline">
+    <section id="timeline" className="bg-void-m">
       <div className="timeline-container">
         <div className="upper-heading">Timeline</div>
         <div className="lower-heading">

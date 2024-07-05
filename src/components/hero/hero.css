@@ -1,11 +1,13 @@
 #hero {
-  background-image: url("src/assets/Copper icosahedron pattern on a black.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
+  overflow-x: hidden;
 }
+
+@media (max-width: 425px) {
+  #hero {
+    max-width: 425px;
+  }
+}
+
 .hero-up {
   display: flex;
   justify-content: space-around;
@@ -14,29 +16,23 @@
 }
 .reg {
   padding: 20px;
-}
-.reg img {
-  width: 70%;
+  margin-top: 200px;
 }
 .reg h4 {
-  padding: 10px 0px;
-  font-family: Inter;
-  /* font-size: 32px; */
-  font-size: 25px;
+  font-size: 32px;
   font-weight: 500;
   line-height: 38.73px;
   text-align: left;
   color: rgba(255, 255, 255, 1);
+  margin-top: 20px;
 }
 .reg p {
-  padding: 5px 0px;
-  font-family: Inter;
-  /* font-size: 20px; */
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
   line-height: 24.2px;
   text-align: left;
   color: rgba(255, 255, 255, 1);
+  margin-top: 10px;
 }
 .reg span {
   color: rgba(245, 110, 15, 1);
@@ -46,11 +42,10 @@
 }
 .hero-cont {
   padding: 20px;
+  margin-top: 200px;
 }
 .hero-cont h4 {
-  padding: 20px 0px;
-  font-family: Inter;
-  font-size: 45px;
+  font-size: 48px;
   font-weight: 700;
   line-height: 25px;
   text-align: left;
@@ -59,66 +54,120 @@
   -webkit-text-stroke-color: rgba(245, 110, 15, 1);
 }
 .hero-cont .dot {
-  font-size: 40px;
-  text-align: center;
+  font-size: 2rem;
   color: rgba(245, 110, 15, 1);
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: rgba(251, 251, 251, 1);
 }
 .hero-cont .typed {
-  padding-top: 25px;
-  font-family: Inter;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
   text-align: center;
   color: rgba(245, 110, 15, 1);
 }
-.hero-design {
-  display: none;
-}
-#design-cont {
-  position: absolute;
-  width: 100vw;
-  /* color: rgba(21, 20, 25, 1); */
-  background-color: rgba(245, 110, 15, 1);
-  height: 70px;
-  top: 870px;
-  left: -51px;
 
-  /* font-family: Inter;
-  font-size: 32px;
-  font-weight: 400;
-  line-height: 38.73px;
-  text-align: left; */
+.hero::before {
+  overflow: hidden;
+  position: absolute;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-size: clamp(35rem, 50%, 100rem);
+  background-position: -10% 100%;
+  opacity: 0.7;
+  z-index: 1;
+  animation: parallax linear;
+  --parallax-val: 6;
+  --parallax-valX: -3;
+  animation-timeline: scroll();
+}
+
+.white-rectangle {
+  width: 100%;
+  height: 50px;
+  background-color: #fbfbfb;
+  transform: rotate(-3deg);
+  transform-origin: center;
+  position: relative;
+  z-index: 0;
+  top: 50px;
+}
+
+.grey-rectangle {
+  width: 100%;
+  height: 50px;
+  background-color: #878787;
+  transform: rotate(-2deg);
+  transform-origin: center;
+  position: relative;
+  z-index: 1;
+}
+
+.orange-rectangle {
+  width: 100%;
+  height: 50px;
+  background-color: #f56e0f;
+  transform: rotate(-1deg);
+  transform-origin: center;
+  position: relative;
+  z-index: 2;
+  bottom: 50px;
+}
+
+.rectangle-text {
+  position: relative;
+  height: 50px;
+  transform: rotate(-1deg);
   z-index: 3;
-}
-#design-cont p {
-  font-family: Inter;
-  font-size: 20px;
-  font-weight: 400;
-  color: rgba(21, 20, 25, 1);
+  text-overflow: clip;
+  text-wrap: nowrap;
+  bottom: 100px;
+  font-size: 1.5rem;
+  color: #151419;
+  font-weight: 700;
+  display: flex;
+  padding-inline: 1rem;
+  align-items: center;
   line-height: 38.73px;
-  text-align: center;
 }
-@media only screen and (min-width: 700px) {
-  .hero-design {
-    display: block;
-  }
+
+.rectangle-text .dot {
+  color: #fbfbfb;
+  font-size: 20px;
+  margin-left: 35px;
+  margin-right: 35px;
 }
-@media only screen and (min-width: 900px) {
-  #hero {
-    height: 80vh;
-    justify-content: center;
-    align-items: center;
-  }
-  .reg {
-    width: 40%;
-  }
-  .hero-cont {
-    width: 50%;
-  }
-  .hero-cont h4 {
-    line-height: 58px;
-  }
+
+.dot {
+  font-size: 2rem;
+  color: var(--liquid-lava);
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: var(--snow);
+}
+
+.hex-grid {
+  z-index: 15;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.hexagon {
+  position: relative;
+  width: 9vw;
+  height: 10.08vw;
+  background-color: rgba(255, 255, 255, 0);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  transition: background-color 1s ease-in-out;
+}
+
+.hexagon:hover {
+  background-color: rgba(102, 93, 88, 0.2);
+  transition: background-color 0.2s ease-in-out;
 }
