@@ -2,18 +2,17 @@ import "./schedule.css";
 import { useState, useEffect } from "react";
 
 export default function Schedule() {
-  const [imageSrc, setImageSrc] = useState<string>("src/assets/line2mob.svg");
+  const [imageSrc, setImageSrc] = useState<string>("src/assets/Frame 1.svg");
 
   const updateImageSrc = (): void => {
-    const screenWidth = window.innerWidth;
-
-    if (screenWidth >= 900) {
-      setImageSrc("src/assets/Line 2.svg");
-    } else if (screenWidth >= 768) {
-      setImageSrc("src/assets/line2mob.svg");
-    } else {
-      setImageSrc("src/assets/line2mob.svg");
-    }
+    //const screenWidth = window.innerWidth;
+    // if (screenWidth >= 900) {
+    //   setImageSrc("src/assets/Frame 1.svg");
+    // } else if (screenWidth >= 768) {
+    //   setImageSrc("src/assets/line2mob.svg");
+    // } else {
+    //   setImageSrc("src/assets/line2mob.svg");
+    // }
   };
 
   useEffect(() => {
@@ -41,7 +40,39 @@ export default function Schedule() {
         </p>
       </div>
 
-      <img src={imageSrc} alt="Responsive" />
+      <div className="time-bod">
+        <div id="item1" className="detail">
+          <p className="det">Registration starts</p>
+        </div>
+        <div id="item2" className="detail">
+          <p className="det">Registration ends</p>
+        </div>
+        <div id="item3" className="detail">
+          <p className="det">Final Shortlisting</p>
+        </div>
+        <div id="item4" className="detail">
+          <p className="det">Hackathon begins</p>
+        </div>
+        <div id="item5" className="detail">
+          <p className="det">Hackathon End</p>
+        </div>
+        <div id="date1" className="dates">
+          6 July
+        </div>
+        <div id="date2" className="dates">
+          6 August
+        </div>
+        <div id="date3" className="dates">
+          15 August
+        </div>
+        <div id="date4" className="dates">
+          30 August
+        </div>
+        <div id="date5" className="dates">
+          1 September
+        </div>
+        <img src={imageSrc} alt="Responsive" />
+      </div>
     </section>
   );
 }

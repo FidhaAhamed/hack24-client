@@ -8,7 +8,10 @@ import Heading from "../heading";
 
 const PrizePool = () => {
   return (
-    <section id="prizepool" className="px-3 w-dvw pt-12 md:px-12 lg:px-32 bg-void-m max-w-[1500px] min-h-dvh flex flex-col place-content-center">
+    <section
+      id="prizepool"
+      className="px-3 w-dvw pt-12 md:px-12 lg:px-32 bg-void-m max-w-[1500px] min-h-dvh flex flex-col place-content-center"
+    >
       <Heading
         heading="Prize Pool"
         subheading="Take a Peek at the Prizes"
@@ -16,12 +19,12 @@ const PrizePool = () => {
 
       <div>
         <div className="flex flex-col items-center justify-center mt-10 sm:mt-16">
-          <TotalPrize amount={100000} className="block md:hidden" />
+          <TotalPrize amount={150000} className="block md:hidden" />
           <Prize icon={winner} label="Winner" />
         </div>
         <div className="flex flex-col items-center md:gap-x-3 md:flex-row md:justify-between">
           <Prize icon={firstRunnerUp} label="1st Runner Up" />
-          <TotalPrize amount={100000} className="hidden md:block" />
+          <TotalPrize amount={150000} className="hidden md:block" />
           <Prize icon={secondRunnerUp} label="2nd Runner Up" />
         </div>
         <div className="flex flex-col items-center md:gap-x-3 md:flex-row md:justify-between">

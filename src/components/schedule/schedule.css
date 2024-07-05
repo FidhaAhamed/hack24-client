@@ -42,6 +42,50 @@
   text-align: center;
   padding: 20px 5px;
 }
+.time-bod img {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+.detail {
+  position: relative;
+  width: 180px;
+  height: 40px;
+  padding-top: 2px;
+  border-radius: 7px 7px 0px 0px;
+  background: #151419;
+  align-items: center;
+  border-bottom: 4px solid #f56e0f;
+  z-index: 3;
+}
+.det {
+  color: #fbfbfb;
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 29.05px;
+  text-align: center;
+}
+#item1 {
+  top: 550px;
+  left: 20px;
+}
+#item2 {
+  top: 463px;
+  left: 561px;
+}
+#item3 {
+  top: 768px;
+  left: 606px;
+}
+#item4 {
+  top: 672px;
+  left: 1153px;
+}
+#item5 {
+  top: 918px;
+  left: 1210px;
+}
 
 @media only screen and (min-width: 900px) {
   .upper-heading {
