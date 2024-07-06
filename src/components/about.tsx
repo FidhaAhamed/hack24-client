@@ -23,7 +23,7 @@ const useScreenWidth = () => {
 export default function About() {
   const isSmallScreen = useScreenWidth();
   return (
-    <div id="about" className="relative change w-dvw  md:h-dvh bg-about">
+    <div id="about" className="change   md:h-dvh bg-about">
       <div className="z-10 absolute w-full h-fit  md:h-full flex flex-col md:grid md:grid-cols-2 p-8">
         <div className="col-span-1 w-full h-full pb-8 md:pb-0 flex flex-col place-content-center place-items-center lg:p-20">
           <div data-aos="fade-down">

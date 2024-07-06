@@ -2,17 +2,17 @@ import "./schedule.css";
 import { useState, useEffect } from "react";
 
 export default function Schedule() {
-  const [imageSrc, setImageSrc] = useState<string>("src/assets/Frame 1.svg");
+  const [imageSrc, setImageSrc] = useState<string>("src/assets/line2mob 1.svg");
 
   const updateImageSrc = (): void => {
-    //const screenWidth = window.innerWidth;
-    // if (screenWidth >= 900) {
-    //   setImageSrc("src/assets/Frame 1.svg");
-    // } else if (screenWidth >= 768) {
-    //   setImageSrc("src/assets/line2mob.svg");
-    // } else {
-    //   setImageSrc("src/assets/line2mob.svg");
-    // }
+    const screenWidth = window.innerWidth;
+    if (screenWidth >= 900) {
+      setImageSrc("src/assets/Timeline.svg");
+    } else if (screenWidth >= 768) {
+      setImageSrc("src/assets/line2mob 1.svg");
+    } else {
+      setImageSrc("src/assets/line2mob 1.svg");
+    }
   };
 
   useEffect(() => {
@@ -32,16 +32,16 @@ export default function Schedule() {
         <div className="lower-heading">
           <h2>Take a Trek Through Our Schedule</h2>
         </div>
-        <p>
+        {/* <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque odio
           dicta aut esse quis. Nihil, aspernatur ex aliquam esse consequatur
           corporis debitis, modi accusantium vero et deserunt repellat at
           molestias!
-        </p>
+        </p> */}
       </div>
 
       <div className="time-bod">
-        <div id="item1" className="detail">
+        {/* <div id="item1" className="detail">
           <p className="det">Registration starts</p>
         </div>
         <div id="item2" className="detail">
@@ -70,7 +70,7 @@ export default function Schedule() {
         </div>
         <div id="date5" className="dates">
           1 September
-        </div>
+        </div> */}
         <img src={imageSrc} alt="Responsive" />
       </div>
     </section>

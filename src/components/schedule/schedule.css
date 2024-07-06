@@ -14,6 +14,10 @@
   box-sizing: border-box;
 }
 
+#timeline {
+  background-color: #1b1b1e;
+  padding: 50px 0px;
+}
 .upper-heading {
   font-family: Inter;
   font-size: 18px;
@@ -41,6 +45,9 @@
   line-height: 24.2px;
   text-align: center;
   padding: 20px 5px;
+}
+.time-bod {
+  padding-top: 20px;
 }
 .time-bod img {
   position: relative;
