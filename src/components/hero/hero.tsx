@@ -29,7 +29,6 @@ export default function Hero() {
 
   const spaces = " ";
 
-
   useEffect(() => {
     // scrollDown()
     // const timer = setTimeout(() => {
@@ -54,13 +53,12 @@ export default function Hero() {
     }
   };
 
-
   return (
     <section
       id="hero"
       className="bg-hero w-dvw h-lvh font-mono overflow-y-hidden"
     >
-    <div className="hex-grid" id="hexGrid"></div>
+      <div className="hex-grid" id="hexGrid"></div>
       <div className="absolute z-10 w-full h-full grid grid-rows-4 overflow-x-hidden overflow-y-hidden">
         <div className="row-span-3 overflow-x-hidden overflow-y-hidden">
           <div

@@ -21,7 +21,7 @@ const Navbar = () => {
             <a href="#about">About</a>
           </li>
           <li className="font-mono">
-            <a href="">Timeline</a>
+            <a href="#timeline">Timeline</a>
           </li>
           <li className="font-mono">
             <a href="#prizepool">Prize Pool</a>
@@ -39,7 +39,13 @@ const Navbar = () => {
       </div>
 
       <div className={`register-btn ${isMobile ? "open" : ""}`}>
-        <button className="btn font-mono">Register</button>
+        <a
+          href="https://chat.whatsapp.com/EqiC2Djnagi6lsJKjPC8L6"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="btn font-mono">Join</button>{" "}
+        </a>
       </div>
 
       <div className="menu-icon" onClick={toggleMenu}>
