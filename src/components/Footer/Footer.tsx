@@ -20,27 +20,15 @@ function Footer() {
             <div className="icons flex gap-y-4">
               <a
                 className="bg-orange-700 hover:bg-orange-900 rounded-full w-10 h-10 flex place-content-center place-items-center"
-                href="#"
-              >
-                <FaFacebookF />
-              </a>
-              <a
-                className="bg-orange-700 hover:bg-orange-900 rounded-full w-10 h-10 flex place-content-center place-items-center"
-                href="#"
+                href="https://www.linkedin.com/company/ieeemace/"
               >
                 <FaLinkedin />
               </a>
               <a
                 className="bg-orange-700 hover:bg-orange-900 rounded-full w-10 h-10 flex place-content-center place-items-center"
-                href="#"
+                href="https://www.instagram.com/ieeemace?igsh=NGk3eDcwMGp5aWo3"
               >
                 <FaInstagram />
-              </a>
-              <a
-                className="bg-orange-700 hover:bg-orange-900 rounded-full w-10 h-10 flex place-content-center place-items-center"
-                href="#"
-              >
-                <FaTwitter />
               </a>
             </div>
           </div>
