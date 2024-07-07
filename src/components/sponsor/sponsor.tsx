@@ -3,8 +3,6 @@ import Heading from "../heading";
 // import { useEffect } from "react";
 // import Swiper from "swiper";
 // import "swiper/css";
-// import AOS from "aos";
-// import "aos/dist/aos.css";
 
 export default function Sponsors() {
   // const initSwiperSliders = () => {
