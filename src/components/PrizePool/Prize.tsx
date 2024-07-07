@@ -19,7 +19,7 @@ const Prize = ({ icon, label }: PrizeProps) => {
     <div data-aos="fade-down">
       <Container
         prizeProps={{ icon, label }}
-        className="relative mb-16 border-[#FBFBFB] border-[1px] w-48 pt-3 px-3"
+        className="relative mb-16 border-[#FBFBFB] border-[1px] w-44 pt-3 px-3"
       >
         <div className="prize-label  flex justify-center items-center before:text-white before:text-sm before:font-bold before:absolute before:-top-4 before:px-6 before:bg-[#151419]" />
         <div className="flex place-content-center items-center bg-[#F56E0F] p-3">
