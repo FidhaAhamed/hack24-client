@@ -63,9 +63,13 @@ export default function Sponsors() {
   return (
     <section id="sponsors" className="sponsors section-bg">
       <div className="container" data-aos="fade-up">
-        <Heading heading="Sposors" subheading="Our Previous Sposors"></Heading>
+        <Heading
+          heading="Sponsors"
+          subheading="Our Previous Sponsors"
+        ></Heading>
 
         <div
+          id="slider1"
           className="sponsors-slider"
           data-aos="fade-up"
           data-aos-delay="100"
