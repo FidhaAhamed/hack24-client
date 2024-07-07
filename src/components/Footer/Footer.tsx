@@ -12,7 +12,7 @@ function Footer() {
               IEEE MACE SB is a non profit organization working for the
               upliftment of students and professionals.
             </p>
-            <div className="icons flex gap-y-4">
+            <div className="icons flex gap-y-4">            
               <a
                 className="bg-orange-700 hover:bg-orange-900 rounded-full w-10 h-10 flex place-content-center place-items-center"
                 href="https://www.linkedin.com/company/ieeemace/"
