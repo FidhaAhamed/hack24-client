@@ -82,6 +82,51 @@ ul li:hover {
 }
 
 /* Media queries for responsive design */
+
+@media (max-width: 1121px) and (min-width: 769px) {
+  .navbar {
+    flex-direction: row;
+    height: auto;
+    padding-block: 0.5rem;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .logo {
+    width: 15%;
+    text-align: left;
+  }
+
+  .hack-logo {
+    width: 150px;
+    height: auto;
+  }
+
+  .nav-components {
+    width: 65%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  ul li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  .register-btn {
+    width: 20%;
+    text-align: right;
+    height: auto;
+    padding-top: 10px;
+  }
+}
+
 @media (max-width: 768px) {
   .navbar {
     flex-direction: row;
