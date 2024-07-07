@@ -2,16 +2,16 @@ import "./schedule.css";
 import { useState, useEffect } from "react";
 
 export default function Schedule() {
-  const [imageSrc, setImageSrc] = useState<string>("src/assets/line2mob 1.svg");
+  const [imageSrc, setImageSrc] = useState<string>("/images/line2mob 1.svg");
 
   const updateImageSrc = (): void => {
     const screenWidth = window.innerWidth;
     if (screenWidth >= 900) {
-      setImageSrc("src/assets/Timeline.svg");
+      setImageSrc("/images/Timeline.svg");
     } else if (screenWidth >= 768) {
-      setImageSrc("src/assets/line2mob 1.svg");
+      setImageSrc("/images/line2mob 1.svg");
     } else {
-      setImageSrc("src/assets/line2mob 1.svg");
+      setImageSrc("/images/line2mob 1.svg");
     }
   };
 

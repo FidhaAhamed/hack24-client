@@ -7,11 +7,11 @@ import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import Hero from "./components/hero/hero";
 import PrizePool from "./components/PrizePool/PrizePool";
+import Sponsors from "./components/sponsor/sponsor";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-
 function App() {
   useEffect(() => {
     AOS.init({
@@ -26,6 +26,7 @@ function App() {
       <About></About>
       <Schedule></Schedule>
       <PrizePool />
+      <Sponsors></Sponsors>
       <Faq></Faq>
       <Contact></Contact>
       <Footer></Footer>
