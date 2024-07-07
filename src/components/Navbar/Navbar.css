@@ -1,197 +1,192 @@
-.navbar{
+.navbar {
   position: sticky;
   top: 0;
   z-index: 100;
-    max-height: 60px;
-    display: flex;
-     align-items: center;
-     justify-content: space-between;
-     padding-left: 120px;
- }
- 
- .logo{
-     width: 15%;
-     display: flex;
-     align-items: center;
- }
- 
- .hack-logo{
-     width: 180px;
-     cursor: pointer;
- }
- 
- .nav-components{
-     width: 60%;
- }
- 
- ul{
-     flex: 1;
-     list-style: none;
-     text-align: center;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-    width: 100%;
- }
- 
- ul li{
-     display: inline;
-     margin: 0 20px;
-     cursor: pointer;
-     font-size: 1rem;
-     font-weight: 400;
-     font-family: Inter;
-     line-height: 24.2px;
-     transition-duration: 300ms;
- }
+  max-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 120px;
+}
 
- ul li:hover{
-  color: var(--liquid-lava)
- }
- 
- .register-btn{
-     width: 20%;
-     height: 80px;
-     color: #F56E0F;
-     padding-top: 20px;
- }
+.logo {
+  width: 15%;
+  display: flex;
+  align-items: center;
+}
 
+.hack-logo {
+  width: 180px;
+  cursor: pointer;
+}
 
- 
- .btn{
-     border: 3px;
-     width: 160px;
-     height: 40px;
-     border-color: #878787;
-     font-weight: 500;
-     border-style: solid;
-     font-size: 20px;
-     align-items: center;
-     font-family: Inter;
-     line-height: 24.2px;
-     transition-duration: 300ms;
- }
+.nav-components {
+  width: 60%;
+}
 
- .btn:hover{
+ul {
+  flex: 1;
+  list-style: none;
+  text-align: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+ul li {
+  display: inline;
+  margin: 0 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: Inter;
+  line-height: 24.2px;
+  transition-duration: 300ms;
+}
+
+ul li:hover {
+  color: var(--liquid-lava);
+}
+
+.register-btn {
+  width: 20%;
+  height: 80px;
+  color: #f56e0f;
+  padding-top: 20px;
+}
+
+.btn {
+  border: 3px;
+  width: 160px;
+  height: 40px;
+  border-color: #878787;
+  font-weight: 500;
+  border-style: solid;
+  font-size: 20px;
+  align-items: center;
+  font-family: Inter;
+  line-height: 24.2px;
+  transition-duration: 300ms;
+}
+
+.btn:hover {
   background: var(--liquid-lava);
   color: var(--snow);
- }
+}
 
- .menu-icon {
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    height: auto;
+    padding-block: 0.5rem;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .logo {
+    width: 100%;
+    text-align: center;
+    height: auto;
+  }
+
+  .hack-logo {
+    width: 150px;
+    height: auto;
+  }
+
+  .nav-components {
+    width: 100%;
+    text-align: center;
     display: none;
-    font-size: 28px;
-    cursor: pointer;
-  }
-  
-  /* Media queries for responsive design */
-  @media (max-width: 768px) {
-    .navbar {
-      flex-direction: row;
-      height: auto;
-      padding-block: 0.5rem;
-      padding-left: 20px;
-      padding-right: 20px;
-    }
-  
-    .logo {
-      width: 100%;
-      text-align: center;
-      height: auto;
-    }
-  
-    .hack-logo {
-      width: 150px;
-      height: auto;
-    }
-  
-    .nav-components {
-      width: 100%;
-      text-align: center;
-      display: none;
-      flex-direction: column;
-    }
-  
-    .nav-components.open {
-      display: flex;
-      flex-wrap: nowrap;
-    }
-  
-    ul {
-      padding: 0;
-    }
-  
-    ul li {
-      display: block;
-      margin: 10px 0;
-    }
-  
-    .register-btn {
-      width: 100%;
-      text-align: center;
-      height: auto;
-      padding-top: 10px;
-      padding-inline: 2rem;
-      padding-bottom: 10px;
-    }
-  
-    .btn {
-      width: 100%;
-    }
-  
-    .menu-icon {
-      display: block;
-    }
-  }
-  
-
-
-  @media (max-width: 600px) {
-    .navbar {
-      flex-direction: row;
-      height: auto;
-      padding-block: 0.5rem;
-
-    }
-  
-    .logo {
-      width: 100%;
-      height: auto;
-    }
-  
-    .hack-logo {
-      width: 120px;
-      height: auto;
-    }
-  
-    .nav-components {
-      width: 100%;
-      text-align: center;
-    }
-  
-    ul li {
-      font-size: 18px;
-      margin: 8px 0;
-    }
-  
-    .register-btn {
-      width: 100%;
-      text-align: center;
-      padding-top: 5px;
-      padding-bottom: 5px;
-      display: none;
-    }
-
-    .register-btn.open {
-        display: block;
-      }
-  
-    .btn {
-      width: 80%;
-    }
-  }
-
-  .align{
     flex-direction: column;
-    max-height: fit-content;
   }
 
+  .nav-components.open {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  ul {
+    padding: 0;
+  }
+
+  ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .register-btn {
+    width: 100%;
+    text-align: center;
+    height: auto;
+    padding-top: 10px;
+    padding-inline: 2rem;
+    padding-bottom: 10px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: row;
+    height: auto;
+    padding-block: 0.5rem;
+  }
+
+  .logo {
+    width: 100%;
+    height: auto;
+  }
+
+  .hack-logo {
+    width: 120px;
+    height: auto;
+  }
+
+  .nav-components {
+    width: 100%;
+    text-align: center;
+  }
+
+  ul li {
+    font-size: 18px;
+    margin: 8px 0;
+  }
+
+  .register-btn {
+    width: 100%;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: none;
+  }
+
+  .register-btn.open {
+    display: block;
+  }
+
+  .btn {
+    width: 80%;
+  }
+}
+
+.align {
+  flex-direction: column;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+}
