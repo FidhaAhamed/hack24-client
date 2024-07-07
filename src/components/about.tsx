@@ -52,26 +52,26 @@ export default function About() {
           <div className="container " data-aos="flip-left">
             <div className="none hex bg-void" data-aos="flip-right">
               <div className="hex-inner"></div>
-              <div className="title text-xl text-snow font-bold">
+              <div className="title text-xl xl:text-2xl text-snow font-bold">
                 Good Health and Wellbeing
               </div>
             </div>
             <div className="none hex bg-lava" data-aos="flip-right">
               <div className="hex-inner"></div>
-              <div className="title text-xl text-snow font-bold">
+              <div className="title text-xl xl:text-2xl text-snow font-bold">
                 Quality Education
               </div>
             </div>
             <div className="none hex bg-lava" data-aos="flip-right">
               <div className="hex-inner"></div>
-              <div className="title text-xl text-snow font-bold">
+              <div className="title text-xl xl:text-2xl text-snow font-bold">
                 Affordable and clean energy
               </div>
             </div>
 
             <div className="none hex" data-aos="flip-right">
               <div className="hex-inner"></div>
-              <div className="text-xl text-lava font-bold">Tracks</div>
+              <div className="text-2xl text-lava font-bold">Tracks</div>
             </div>
 
             {isSmallScreen && (
@@ -106,7 +106,7 @@ export default function About() {
             )}
             <div className=" hex bg-void" data-aos="flip-right">
               <div className="hex-inner"></div>
-              <div className="title text-xl text-snow font-bold">
+              <div className="title text-xl lg:text-lg/5 xl:text-2xl text-snow font-bold">
                 Industry, Innovation, and infrastructure
               </div>
             </div>
@@ -120,7 +120,7 @@ export default function About() {
             )}
             <div className="hex bg-void" data-aos="flip-right">
               <div className="hex-inner"></div>
-              <div className="title text-xl text-snow font-bold">
+              <div className="title text-xl xl:text-2xl text-snow font-bold">
                 Sustainable Cities and Communities
               </div>
             </div>
@@ -128,7 +128,7 @@ export default function About() {
             <div className="none hex bg-lava" data-aos="flip-right">
               <div className="hex-inner"></div>
 
-              <div className="title text-xl text-snow font-bold">
+              <div className="title text-xl xl:text-2xl text-snow font-bold">
                 Life on Land
               </div>
             </div>

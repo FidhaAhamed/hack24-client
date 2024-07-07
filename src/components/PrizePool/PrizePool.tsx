@@ -19,12 +19,12 @@ const PrizePool = () => {
 
       <div>
         <div className="flex flex-col items-center justify-center mt-10 sm:mt-16">
-          <TotalPrize amount={150000} className="block md:hidden" />
+          <TotalPrize amount={100000} className="block md:hidden" />
           <Prize icon={winner} label="Winner" />
         </div>
         <div className="flex flex-col items-center md:gap-x-3 md:flex-row md:justify-between">
           <Prize icon={firstRunnerUp} label="1st Runner Up" />
-          <TotalPrize amount={150000} className="hidden md:block" />
+          <TotalPrize amount={100000} className="hidden md:block" />
           <Prize icon={secondRunnerUp} label="2nd Runner Up" />
         </div>
         <div className="flex flex-col items-center md:gap-x-3 md:flex-row md:justify-between">
