@@ -36,6 +36,9 @@
   text-align: center;
   margin: 20px 0;
 }
+#slider1 {
+  padding-top: 5vw;
+}
 
 @media only screen and (min-device-width: 431px) {
   .sponsors .sponsor-item .sponsor-img {
