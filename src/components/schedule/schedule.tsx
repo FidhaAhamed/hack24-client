@@ -71,7 +71,7 @@ export default function Schedule() {
         <div id="date5" className="dates">
           1 September
         </div> */}
-        <img src={imageSrc} alt="Responsive" />
+        <img className=" pointer-events-none" src={imageSrc} alt="Responsive" />
       </div>
     </section>
   );
