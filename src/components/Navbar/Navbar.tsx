@@ -40,11 +40,11 @@ const Navbar = () => {
 
       <div className={`register-btn ${isMobile ? "open" : ""}`}>
         <a
-          href="https://chat.whatsapp.com/EqiC2Djnagi6lsJKjPC8L6"
+          href="https://hack-registration.vercel.app/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <button className="btn font-mono">Join</button>{" "}
+          <button className="btn font-mono">Register</button>{" "}
         </a>
       </div>
 
