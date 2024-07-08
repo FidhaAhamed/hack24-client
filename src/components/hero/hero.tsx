@@ -1,8 +1,28 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import Typed from "typed.js";
 import "./hero.css";
 
+const useScreenWidth = () => {
+  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth < 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  return isSmallScreen;
+};
+
 export default function Hero() {
+  const isSmallScreen = useScreenWidth();
+
   const typedElementRef = useRef<HTMLSpanElement | null>(null);
 
   useEffect(() => {
@@ -56,7 +76,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="bg-hero w-dvw h-lvh font-mono overflow-y-hidden"
+      className="relative bg-hero w-dvw h-lvh font-mono overflow-y-hidden flex place-content-center"
     >
       <div className="hex-grid" id="hexGrid"></div>
       <div className="absolute z-10 w-full h-full grid grid-rows-4 overflow-x-hidden overflow-y-hidden">
@@ -129,6 +149,11 @@ export default function Hero() {
           </div>
         </div>
       </div>
+      {isSmallScreen && (
+        <button className="z-50 text-[#F56E0F] duration-300 hover:text-slate-200 absolute w-fit px-4 text-base py-1 flex place-content-center hover:bg-[#F56E0F]  place-items-center bottom-1/4 border-2 border-[#F56E0F] rounded">
+          <a href="https://hack-registration.vercel.app/">Register</a>
+        </button>
+      )}
     </section>
   );
 }
