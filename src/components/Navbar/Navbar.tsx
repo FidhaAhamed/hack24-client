@@ -27,7 +27,7 @@ const Navbar = () => {
             <a href="#prizepool">Prize Pool</a>
           </li>
           <li className="font-mono">
-            <a href="">Sponsers</a>
+            <a href="">Sponsors</a>
           </li>
           <li className="font-mono">
             <a href="#faq">FAQ</a>
