@@ -13,6 +13,7 @@ const Navbar = () => {
     <div className={`bg-snow w-dvw navbar ${isMobile ? "align" : ""}`}>
       <div className="logo">
         <img className="hack-logo" src="/images/hack26.png" alt=".hack();_" />
+        <img className="hack-logo ml-8 w-16" src="/images/htbb.png" alt="htb" />
       </div>
 
       <div className={`nav-components ${isMobile ? "open" : ""}`}>
@@ -27,7 +28,7 @@ const Navbar = () => {
             <a href="#prizepool">Prize Pool</a>
           </li>
           <li className="font-mono">
-            <a href="">Sponsers</a>
+            <a href="">Sponsors</a>
           </li>
           <li className="font-mono">
             <a href="#faq">FAQ</a>

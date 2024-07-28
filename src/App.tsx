@@ -7,7 +7,7 @@ import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import Hero from "./components/hero/hero";
 import PrizePool from "./components/PrizePool/PrizePool";
-import Sponsors from "./components/sponsor/sponsor";
+import Sponsors from "./components/sponsors/sponsors";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
