@@ -11,7 +11,7 @@ const sponsors = [
   {
     tier: "Bronze",
     color: "#CD7F32",
-    logo: ["/images/being_abroad.png"],
+    logo: ["/images/Accelerate-x.png"],
   },
 ];
 
