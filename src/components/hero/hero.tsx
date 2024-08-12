@@ -16,7 +16,6 @@ const useScreenWidth = () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-
   return isSmallScreen;
 };
 
@@ -50,11 +49,6 @@ export default function Hero() {
   const spaces = " ";
 
   useEffect(() => {
-    // scrollDown()
-    // const timer = setTimeout(() => {
-    //   scrollUp()
-    // }, 1000);
-
     generateHexGrid();
   }, []);
 
@@ -162,10 +156,22 @@ export default function Hero() {
           </div>
         </div>
       </div>
+      {!isSmallScreen && (
+        <div className="z-50  absolute flex gap-x-4   bottom-1/3 font-bold">
+          <button className=" text-[#F56E0F] duration-300 hover:text-slate-200  w-fit px-4 text-base py-2 flex place-content-center hover:bg-[#F56E0F]  place-items-center border-2 border-[#F56E0F] rounded">
+            <a href="https://bit.ly/projectexpohack">Project Expo</a>
+          </button>
+        </div>
+      )}
       {isSmallScreen && (
-        <button className="z-50 text-[#F56E0F] duration-300 hover:text-slate-200 absolute w-fit px-4 text-base py-1 flex place-content-center hover:bg-[#F56E0F]  place-items-center bottom-1/4 border-2 border-[#F56E0F] rounded">
-          <a href="https://hack-registration.vercel.app/">Register</a>
-        </button>
+        <div className="z-50  absolute flex gap-x-4   bottom-1/4">
+          <button className=" text-[#F56E0F] duration-300 hover:text-slate-200  w-fit px-4 text-base py-1 flex place-content-center hover:bg-[#F56E0F]  place-items-center bottom-1/4 border-2 border-[#F56E0F] rounded">
+            <a href="https://bit.ly/projectexpohack">Project Expo</a>
+          </button>
+          <button className=" text-[#F56E0F] duration-300 hover:text-slate-200  w-fit px-4 text-base py-1 flex place-content-center hover:bg-[#F56E0F]  place-items-center bottom-1/4 border-2 border-[#F56E0F] rounded">
+            <a href="https://hack-registration.vercel.app/">Register</a>
+          </button>
+        </div>
       )}
     </section>
   );
