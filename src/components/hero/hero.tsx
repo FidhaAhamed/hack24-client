@@ -146,14 +146,14 @@ export default function Hero() {
       {!isSmallScreen && (
         <div className="z-50  absolute flex gap-x-4   bottom-1/3 font-bold">
           <button className=" text-[#F56E0F] duration-300 hover:text-slate-200  w-fit px-4 text-base py-2 flex place-content-center hover:bg-[#F56E0F]  place-items-center border-2 border-[#F56E0F] rounded">
-            <a href="#">Project Expo</a>
+            <a href="https://bit.ly/projectexpohack">Project Expo</a>
           </button>
         </div>
       )}
       {isSmallScreen && (
         <div className="z-50  absolute flex gap-x-4   bottom-1/4">
           <button className=" text-[#F56E0F] duration-300 hover:text-slate-200  w-fit px-4 text-base py-1 flex place-content-center hover:bg-[#F56E0F]  place-items-center bottom-1/4 border-2 border-[#F56E0F] rounded">
-            <a href="#">Project Expo</a>
+            <a href="https://bit.ly/projectexpohack">Project Expo</a>
           </button>
           <button className=" text-[#F56E0F] duration-300 hover:text-slate-200  w-fit px-4 text-base py-1 flex place-content-center hover:bg-[#F56E0F]  place-items-center bottom-1/4 border-2 border-[#F56E0F] rounded">
             <a href="https://hack-registration.vercel.app/">Register</a>
