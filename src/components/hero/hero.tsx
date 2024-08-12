@@ -80,12 +80,12 @@ export default function Hero() {
     >
       <div className="hex-grid" id="hexGrid"></div>
       <div className="absolute z-10 w-full h-full grid grid-rows-4 overflow-x-hidden overflow-y-hidden">
-        <div className="row-span-3 overflow-x-hidden overflow-y-hidden">
+        <div className="h-full w-full row-span-3 overflow-x-hidden overflow-y-hidden">
           <div
             data-aos="fade-up"
-            className="h-full flex flex-col md:grid md:grid-cols-5"
+            className="h-full w-full flex flex-col md:grid md:grid-cols-5"
           >
-            <div className="h-full w-full col-span-2 md:p-20">
+            <div className="h-5/6 w-full col-span-2 md:p-20">
               <div className="flex  flex-col h-full place-content-center md:pl-4">
                 <div className="appear max-w-80 md:max-w-full flex text-3xl px-6 text-snow font-bold stroke">
                   Dream <span className="dot text-lg text-lava"> • </span>
@@ -106,7 +106,7 @@ export default function Hero() {
                 </div>
               </div>
             </div>
-            <div className="none h-full w-full col-span-3 md:flex flex-col pr-16 place-content-center place-items-center">
+            <div className="none h-5/6 w-full col-span-3 md:flex flex-col pr-16 place-content-center place-items-center">
               <div className="text-4xl text-snow font-bold stroke">
                 Dream <span className="dot text-lava"> • </span>Develop
                 <span className="dot text-lava"> • </span>Dominate
@@ -121,6 +121,19 @@ export default function Hero() {
                 </span>
               </div>
             </div>
+            {/* <div className="h-1/6 md:col-start-2 md:col-span-2 relative md:left-[120px]">
+              <a
+                href="https://logwork.com/countdown-fnqd"
+                className="countdown-timer text-2xl"
+                data-timezone="Asia/Kolkata"
+                data-textcolor="#f56e0f"
+                data-date="2024-08-09 00:00"
+                data-digitscolor="#f56e0f"
+                data-unitscolor="#f56e0f"
+              >
+                Time Remaining
+              </a>
+            </div> */}
           </div>
         </div>
         <div data-aos="fade-down" className="row-span-1">

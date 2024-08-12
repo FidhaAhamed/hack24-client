@@ -83,7 +83,6 @@
   --parallax-valX: -3;
   animation-timeline: scroll();
 }
-
 .white-rectangle {
   width: 100%;
   height: 50px;
