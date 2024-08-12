@@ -1,5 +1,6 @@
 import "./App.css";
 import About from "./components/about";
+import Timer from "./components/timer/timer";
 import Faq from "./components/faq/faq";
 import Schedule from "./components/schedule/schedule";
 import Navbar from "./components/Navbar/Navbar";
@@ -23,6 +24,7 @@ function App() {
     <>
       <Navbar></Navbar>
       <Hero></Hero>
+      <Timer></Timer>
       <About></About>
       <Schedule></Schedule>
       <PrizePool />

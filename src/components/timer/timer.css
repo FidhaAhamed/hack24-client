@@ -1,0 +1,24 @@
+.CountDown {
+  padding: 10px;
+}
+.timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.timer div {
+  font-weight: 700;
+  color: #f56e0f;
+}
+
+.timer .timer-span {
+  margin: 0 10px 0 0;
+  font-weight: 300;
+  color: #f56e0f;
+}
+#subscribe .section-header h2,
+#subscribe p {
+  color: #f56e0f;
+}
