@@ -4,18 +4,19 @@ import Sponsor from "./sponsor";
 interface TierProps {
   tier: string;
   color: string;
+  link: string[];
   sponsorImgLinks: string[];
 }
 
-const Tier: React.FC<TierProps> = ({ tier, color, sponsorImgLinks }) => {
+const Tier: React.FC<TierProps> = ({ tier, color, link, sponsorImgLinks }) => {
   return (
     <div className="flex flex-col items-center flex-wrap justify-center pb-8">
       <div className={`text-2xl font-bold pb-8`} style={{ color }}>
         {tier} sponsor
       </div>
       <div className="flex justify-center flex-wrap">
-        {sponsorImgLinks.map((imgLink, index) => (
-          <Sponsor key={index} imgLink={imgLink} />
+        {sponsorImgLinks.map((link,imgLink, index) => (
+          <Sponsor key={index} link={link} imgLink={imgLink} />
         ))}
       </div>
     </div>
