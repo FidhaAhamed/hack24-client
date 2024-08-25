@@ -6,13 +6,13 @@ const sponsors = [
   {
     tier: "Diamond",
     color: "#67E8F9",
-    link: "https://htb.ieee.org/",
+    link: ["https://htb.ieee.org/"],
     logo: ["/images/htb.png"],
   },
   {
     tier: "Bronze",
     color: "#CD7F32",
-    link: "https://hack24.ieeemace.org/",
+    link: ["https://hack24.ieeemace.org/"],
     logo: ["/images/Accelerate-x.png"],
   },
 ];

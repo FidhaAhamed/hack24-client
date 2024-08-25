@@ -15,8 +15,8 @@ const Tier: React.FC<TierProps> = ({ tier, color, link, sponsorImgLinks }) => {
         {tier} sponsor
       </div>
       <div className="flex justify-center flex-wrap">
-        {sponsorImgLinks.map((link,imgLink, index) => (
-          <Sponsor key={index} link={link} imgLink={imgLink} />
+        {sponsorImgLinks.map((imgLink, index) => (
+          <Sponsor key={index} link={link[index]} imgLink={imgLink} />
         ))}
       </div>
     </div>
