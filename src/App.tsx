@@ -13,6 +13,7 @@ import Sponsors from "./components/sponsors/sponsors";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import Day from "./components/day/day";
 function App() {
   useEffect(() => {
     AOS.init({
@@ -25,6 +26,7 @@ function App() {
       <Navbar></Navbar>
       <Hero></Hero>
       <About></About>
+      <Day></Day>
       <Schedule></Schedule>
       <PrizePool />
       <Sponsors></Sponsors>
