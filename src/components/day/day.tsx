@@ -82,7 +82,7 @@ const timelineData = {
 };
 
 export default function Day() {
-  const [activeTab, setActiveTab] = useState("day1");
+  const [activeTab, setActiveTab] = useState("day2");
 
   const renderTimeline = () => {
     return (
